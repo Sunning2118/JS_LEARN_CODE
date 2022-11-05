@@ -2,6 +2,7 @@ var esprima = require("esprima")
 var estraverse = require("estraverse")
 script = "function eat(){};"
 var ast_script = esprima.parseScript(script)
+console.log(ast_script)
 estraverse.traverse(ast_script, {
     enter: function (node) {
         if (node.type === "Identifier") {  // 某标识符的节点

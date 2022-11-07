@@ -1,7 +1,6 @@
 const generator = require("@babel/generator");
 const parser = require("@babel/parser");
 const traverse = require("@babel/traverse");
-const { tsExternalModuleReference } = require("@babel/types");
 const types = require("@babel/types");
 function compile(code){
     const ast=parser.parse(code)  // 生成抽象语法树
@@ -14,9 +13,4 @@ function getData() {
 }
 `;
 const newCode = compile(code)
-console.log(newCode);
-a1(){
-    var a=2
-    return a
-}
-a1()
+console.log(newCode)

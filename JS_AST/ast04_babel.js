@@ -15,8 +15,3 @@ function getData() {
 `;
 const newCode = compile(code)
 console.log(newCode);
-a1(){
-    var a=2
-    return a
-}
-a1()

@@ -1,0 +1,54 @@
+{
+  "type": "CallExpression",
+  "start": 24,
+  "end": 43,
+  "loc": {
+    "start": { "line": 3, "column": 2 },
+    "end": { "line": 3, "column": 21 }
+  },
+  "callee": {
+    "type": "MemberExpression",
+    "start": 24,
+    "end": 35,
+    "loc": {
+      "start": { "line": 3, "column": 2 },
+      "end": { "line": 3, "column": 13 }
+    },
+    "object": {
+      "type": "Identifier",
+      "start": 24,
+      "end": 31,
+      "loc": {
+        "start": { "line": 3, "column": 2 },
+        "end": { "line": 3, "column": 9 },
+        "identifierName": "console"
+      },
+      "name": "console"
+    },
+    "property": {
+      "type": "Identifier",
+      "start": 32,
+      "end": 35,
+      "loc": {
+        "start": { "line": 3, "column": 10 },
+        "end": { "line": 3, "column": 13 },
+        "identifierName": "log"
+      },
+      "name": "log"
+    },
+    "computed": false
+  },
+  "arguments": [
+    {
+      "type": "StringLiteral",
+      "start": 36,
+      "end": 42,
+      "loc": {
+        "start": { "line": 3, "column": 14 },
+        "end": { "line": 3, "column": 20 }
+      },
+      "extra": { "rawValue": "data", "raw": "'data'" },
+      "value": "data"
+    }
+  ]
+}

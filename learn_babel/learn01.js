@@ -1,3 +1,4 @@
+// 利用babel-cli进行空编译
 var esprima = require("esprima")
 script1 = "answer = 42"
 script2 = "const fn = a => a;"
@@ -10,3 +11,4 @@ var ast_moudle = esprima.parseModule(moudle)
 console.log(ast_script1)
 console.log(ast_script2)
 console.log(ast_moudle)
+// 终端中输入<babel learn01.js>

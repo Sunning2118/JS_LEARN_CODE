@@ -1,9 +1,9 @@
-export let myName = "Tom";
-export let myAge = 20;
-export let myfn = function () {
+let myName = "Tom";
+let myAge = 20;
+let myfn = function () {
   return "My name is" + myName + "! I'm '" + myAge + "years old."
 }
-export let myClass = class myClass {
+let myClass = class myClass {
   static a = "yeah!";
 }
-// export { myName, myAge, myfn, myClass }
+export { myName, myAge, myfn, myClass }

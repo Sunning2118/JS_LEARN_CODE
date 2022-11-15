@@ -1,3 +1,4 @@
+// 被分析的对象
 // 利用babel-cli进行空编译
 var esprima = require("esprima")
 script1 = "answer = 42"

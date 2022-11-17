@@ -965,7 +965,7 @@
 
 "babel-traverse@^6.24.1", "babel-traverse@^6.26.0":
   "integrity" "sha512-iSxeXx7apsjCHe9c7n8VtRXGzI2Bk1rBSOJgCCjfyXb6v1aCqE1KSEpq/8SXuVN8Ka/Rh1WDTF0MDzkvTA4MIA=="
-  "resolved" "https://registry.npmjs.org/babel-traverse/-/babel-traverse-6.26.0.tgz"
+  "resolved" "https://registry.npmmirror.com/babel-traverse/-/babel-traverse-6.26.0.tgz"
   "version" "6.26.0"
   dependencies:
     "babel-code-frame" "^6.26.0"
@@ -990,7 +990,7 @@
 
 "babylon@^6.18.0":
   "integrity" "sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ=="
-  "resolved" "https://registry.npmjs.org/babylon/-/babylon-6.18.0.tgz"
+  "resolved" "https://registry.npmmirror.com/babylon/-/babylon-6.18.0.tgz"
   "version" "6.18.0"
 
 "balanced-match@^1.0.0":

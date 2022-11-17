@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    const test_obj = {
+  "name": 'asd',
+  "age": 22,
+  "work": 'coder'
+}
+const test_list = [5, 4, 3, 7];
+for (let item in test_obj) {
+  console.log(item)
+}
+// name
+// age
+// work
+for (let item in test_list) {
+  console.log(item)
+}
+// 0
+// 1
+// 2
+// 3
+for (let item of test_list) {
+  console.log(item)
+}
+const test_set = new set([5, 4, 3, 7]);
+const test_map = new Map([[1, 'x'], [2, 'x'], [3, 's']])
+for (var x of test_set) {
+  console.log(x);//输出的是Set集合每个元素的值 A　B　C
+}
+  </script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,13 +1,11 @@
-const MyVisitor = {
-  Identifier() {
-    console.log("Called!");
-  }
-};
+// babylon
+import * as babylon from "babylon";
 
-// 你也可以先创建一个访问者对象，并在稍后给它添加方法。
-let visitor = {};
-visitor.MemberExpression = function () { };
-visitor.FunctionDeclaration = function () { }
-export function test() {
-  console.log('asd')
-}
+const code = `function square(n) {
+  return n * n;
+}`;
+let output = babylon.parse(code);
+console.log(output, {
+  sourceType: "module", // default: "script"
+  plugins: ["jsx"] // default: []
+})

@@ -1,16 +1,16 @@
-import parser from "@babel/parser";
+// babel-types
+import * as babylon from "babylon";
 import traverse from "@babel/traverse";
 import * as t from "@babel/types";
-import generate from "@babel/generator";
-import template from "@babel/template";
+const code = `function square(n) {
+  return n * n;
+}`;
 
-const buildRequire = template.default(`
-  var IMPORT_NAME = require(SOURCE);
-`);
-
-const ast = buildRequire({
-  IMPORT_NAME: t.identifier("myModule"),
-  SOURCE: t.stringLiteral("my-module")
+const ast = babylon.parse(code);
+traverse.default(ast, {
+  enter(path) {
+    if (t.isIdentifier(path.node, { name: "n" })) {
+      path.node.name = "x";
+    }
+  }
 });
-
-console.log(generate.default(ast).code);

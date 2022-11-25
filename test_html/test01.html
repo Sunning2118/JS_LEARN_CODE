@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
+  <script>
     let name = 'Nicholas';
     let age = 36;
-</script>
-<script>
+  </script>
+  <script>
     // 假设脚本不确定页面中是否已经声明了同名变量
     // 那它可以假设还没有声明过
     if (typeof name === 'undefined') {
-        let name;
+      let name;
     }
     // name 被限制在 if {} 块的作用域内
     // 因此这个赋值形同全局赋值
     name = 'Matt';
     try {
-        console.log(age); // 如果 age 没有声明过，则会报错
+      console.log(age); // 如果 age 没有声明过，则会报错
     }
     catch (error) {
-        let age;
+      let age;
     }
     // age 被限制在 catch {}块的作用域内
     // 因此这个赋值形同全局赋值
     age = 26;
-</script>
+  </script>
 
-<head>
+  <head>
     <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+  </body>
+
 </html>

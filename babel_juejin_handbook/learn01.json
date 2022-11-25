@@ -1,0 +1,392 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "console",
+            "range": [
+              0,
+              7
+            ]
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "log",
+            "range": [
+              8,
+              11
+            ]
+          },
+          "range": [
+            0,
+            11
+          ]
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": 1,
+            "raw": "1",
+            "range": [
+              12,
+              13
+            ]
+          }
+        ],
+        "range": [
+          0,
+          14
+        ]
+      },
+      "range": [
+        0,
+        15
+      ]
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "func",
+        "range": [
+          26,
+          30
+        ]
+      },
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "console",
+                  "range": [
+                    37,
+                    44
+                  ]
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "info",
+                  "range": [
+                    45,
+                    49
+                  ]
+                },
+                "range": [
+                  37,
+                  49
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": 2,
+                  "raw": "2",
+                  "range": [
+                    50,
+                    51
+                  ]
+                }
+              ],
+              "range": [
+                37,
+                52
+              ]
+            },
+            "range": [
+              37,
+              53
+            ]
+          }
+        ],
+        "range": [
+          33,
+          55
+        ]
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "range": [
+        17,
+        55
+      ]
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Clazz",
+          "range": [
+            78,
+            83
+          ]
+        },
+        "superClass": null,
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "say",
+                "range": [
+                  88,
+                  91
+                ]
+              },
+              "computed": false,
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "console",
+                            "range": [
+                              100,
+                              107
+                            ]
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "debug",
+                            "range": [
+                              108,
+                              113
+                            ]
+                          },
+                          "range": [
+                            100,
+                            113
+                          ]
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": 3,
+                            "raw": "3",
+                            "range": [
+                              114,
+                              115
+                            ]
+                          }
+                        ],
+                        "range": [
+                          100,
+                          116
+                        ]
+                      },
+                      "range": [
+                        100,
+                        117
+                      ]
+                    }
+                  ],
+                  "range": [
+                    94,
+                    121
+                  ]
+                },
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "range": [
+                  91,
+                  121
+                ]
+              },
+              "kind": "method",
+              "static": false,
+              "range": [
+                88,
+                121
+              ]
+            },
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "render",
+                "range": [
+                  124,
+                  130
+                ]
+              },
+              "computed": false,
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "JSXElement",
+                        "openingElement": {
+                          "type": "JSXOpeningElement",
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "name": "div",
+                            "range": [
+                              147,
+                              150
+                            ]
+                          },
+                          "selfClosing": false,
+                          "attributes": [],
+                          "range": [
+                            146,
+                            151
+                          ]
+                        },
+                        "children": [
+                          {
+                            "type": "JSXExpressionContainer",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "console",
+                                  "range": [
+                                    152,
+                                    159
+                                  ]
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "error",
+                                  "range": [
+                                    160,
+                                    165
+                                  ]
+                                },
+                                "range": [
+                                  152,
+                                  165
+                                ]
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Literal",
+                                  "value": 4,
+                                  "raw": "4",
+                                  "range": [
+                                    166,
+                                    167
+                                  ]
+                                }
+                              ],
+                              "range": [
+                                152,
+                                168
+                              ]
+                            },
+                            "range": [
+                              151,
+                              169
+                            ]
+                          }
+                        ],
+                        "closingElement": {
+                          "type": "JSXClosingElement",
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "name": "div",
+                            "range": [
+                              171,
+                              174
+                            ]
+                          },
+                          "range": [
+                            169,
+                            175
+                          ]
+                        },
+                        "range": [
+                          146,
+                          175
+                        ]
+                      },
+                      "range": [
+                        139,
+                        175
+                      ]
+                    }
+                  ],
+                  "range": [
+                    133,
+                    177
+                  ]
+                },
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "range": [
+                  130,
+                  177
+                ]
+              },
+              "kind": "method",
+              "static": false,
+              "range": [
+                124,
+                177
+              ]
+            }
+          ],
+          "range": [
+            84,
+            179
+          ]
+        },
+        "range": [
+          72,
+          179
+        ]
+      },
+      "range": [
+        57,
+        179
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    179
+  ]
+}

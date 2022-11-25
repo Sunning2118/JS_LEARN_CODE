@@ -6,6 +6,7 @@
   ],
   "plugins": [
     "transform-runtime",
-    "transform-es2015-classes"
+    "transform-es2015-classes",
+    "D:/js_learn_code/babel_math_pow/index.js"
   ]
 }

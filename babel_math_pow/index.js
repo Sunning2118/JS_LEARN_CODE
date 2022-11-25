@@ -2,13 +2,19 @@ import * as types from "@babel/types";
 import * as explode from "@babel/helper-explode-assignable-expression"
 
 const operator = '**';
+
+
 const mathPowExpression = types.callExpression(  // Math.pow(left, right)
   types.memberExpression(types.identifier("Math"), types.identifier("pow")),
   [left, right],
 );
+
+
 const assignMathPowExpression = types.assignmentExpression(// _a=Math.pow(left, right)
   "=", types.identifier("_a"), mathPowExpression
 );
+
+
 
 const getmathPowExpression = (left, right) => {
   return types.callExpression(  // Math.pow(left, right)
@@ -16,6 +22,10 @@ const getmathPowExpression = (left, right) => {
     [left, right],
   );
 }
+
+
+
+
 export default function () {
   return {  // 返回一个对象
     name: 'babel-plugin-exponentiation-opertor',
@@ -44,4 +54,3 @@ export default function () {
     }
   };
 }
-src / index.js

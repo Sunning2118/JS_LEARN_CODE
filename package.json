@@ -34,7 +34,6 @@
 		"type": "git",
 		"url": "git+ssh://git@github.com/Sunning2118/JS_LEARN_CODE.git"
 	},
-	"type": "module",
 	"author": "Sunning2118 <sunning2118@gmail.com>",
 	"license": "MIT",
 	"bugs": {

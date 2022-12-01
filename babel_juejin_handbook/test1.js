@@ -1,31 +1,41 @@
-import template from "@babel/template";
-import generate from "@babel/generator";
-import * as t from "@babel/types";
+import * as parser from '@babel/parser';
+import * as types from '@babel/types'
+import traverse from '@babel/traverse';
+import generate from '@babel/generator';
+import template from '@babel/template';
 
-// const buildRequire = template.default(`
-//   var IMORT_NAME = require(SOURCE);
-// `);
-// const ast = buildRequire({
-//   IMORT_NAME: t.identifier("myModule"),
-//   SOURCE: t.stringLiteral("my-module"),
-// });
-// console.log(generate.default(ast).code);
+const sourceCode = `
+  console.log(1);
 
+  function func() {
+      console.info(2);
+  }
 
-// const ast = template.default.ast(`
-//   var myModule = require("my-module");
-// `);
-// console.log(ast);
+  export default class Clazz {
+      say() {
+          console.adebug(3);
+      }
+      render() {
+          return <div>{console.error(4)}</div>
+      }
+  }
+`;
 
+const ast = parser.parse(sourceCode, {// 解析成AST树
+  sourceType: 'unambiguous',
+  plugins: ['jsx']
+});
 
-// const source = "my-module";
-// const fn = template.default(`
-//   var IMPORT_NAME = require('${source}');
-// `);
-// const ast = fn({
-//   IMPORT_NAME: t.identifier("myModule"),  // 要全部大写，有小写则要加%%
-// });
-// console.log(generate.default(ast).code);
+const targetCalleeName = ['log', 'info', 'error', 'debug'].map(item => `console.${item}`);
 
-const output = template.default.expression("foo")()
-console.log(output)
+traverse.default(ast, {
+  CallExpression (path, state) {
+    // console.log(path.findParent(path => path.isJSXElement()))
+    // const calleeName = generate.default(path.parent).code;
+    // console.log(calleeName)
+    console.log(path.toString())
+  }
+});
+
+// const new_code = generate.default(ast).code;  // 根据ast来生成代码
+// console.log(new_code);
